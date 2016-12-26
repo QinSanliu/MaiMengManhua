@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:context="com.example.administrator.maimengcartoon.fragment.mengwofragment.ZiXunTabFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/bg_profile_item1"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/fragment_zi_xun_cartoon_commentnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#DD2248"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条"
+            android:textColor="#DD2248"
+            android:textSize="12dp"
+            android:layout_alignBottom="@id/fragment_zi_xun_cartoon_commentnum"
+            android:layout_toRightOf="@id/fragment_zi_xun_cartoon_commentnum"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我评论过的资讯"
+            android:textColor="#DD2248"
+            android:textSize="18sp"
+            android:layout_below="@id/fragment_zi_xun_cartoon_commentnum"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/bg_profile_item1"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/fragment_zi_xun_cartoon_zannum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#DD2248"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条"
+            android:textColor="#DD2248"
+            android:textSize="12dp"
+            android:layout_alignBottom="@id/fragment_zi_xun_cartoon_zannum"
+            android:layout_toRightOf="@id/fragment_zi_xun_cartoon_zannum"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我点赞过的资讯"
+            android:textColor="#DD2248"
+            android:textSize="18sp"
+            android:layout_below="@id/fragment_zi_xun_cartoon_zannum"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

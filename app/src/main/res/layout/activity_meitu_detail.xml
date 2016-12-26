@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/activity_meitu_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.maimengcartoon.ui.MeituDetailActivity">
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/meitu_detail_fanhui"-->
+        <!--android:src="@mipmap/fanhui"-->
+        <!--android:visibility="visible"-->
+        <!--app:fabSize="normal"-->
+        <!--app:backgroundTint="#00000000"-->
+        <!--app:theme="@style/Widget.Design.AppBarLayout"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--/>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/meitu_detail_img"
+                android:src="@mipmap/aaaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+            <RelativeLayout
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_below="@id/meitu_detail_img"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/meitu_detail_userinfo_layout">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/meitu_detail_sdv_touxaing"
+                    android:layout_alignParentLeft="true"
+                    fresco:roundAsCircle="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop" />
+                <TextView
+                    android:id="@+id/meitu_detail_username"
+                    android:layout_toRightOf="@id/meitu_detail_sdv_touxaing"
+                    android:text="用户名"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/showTime"
+                    android:text="2016-12-15"
+                    android:layout_toRightOf="@id/meitu_detail_sdv_touxaing"
+                    android:layout_below="@id/meitu_detail_username"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:layout_below="@id/meitu_detail_img"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/image_nopraise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/meitu_praiseCount"
+                    android:layout_marginLeft="10dp"
+                    android:text="11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/meitu_detail_userinfo_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/duoyu"
+                >
+                <TextView
+                    android:text="标签"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/meitu_detail_label"
+                    android:text="所属标签"
+                    android:gravity="center"
+                    android:background="@drawable/meitu_bg_no_checked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    <LinearLayout
+        android:id="@+id/three_btn"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <TextView
+            android:id="@+id/btn_share"
+            android:drawableTop="@mipmap/btn_share"
+            android:text="分享"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/btn_download"
+            android:drawableTop="@mipmap/btn_download"
+            android:text="下载"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/btn_comment"
+            android:drawableTop="@mipmap/btn_comment"
+            android:text="评论"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</LinearLayout>

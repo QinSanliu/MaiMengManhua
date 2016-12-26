@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="80dp"
+    android:layout_height="160dp"
+    android:background="@drawable/ic_more_item_default"
+    >
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/jixulu_simle_image"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            fresco:roundedCornerRadius="3dp"
+
+            />
+        <TextView
+            android:id="@+id/jixulu_genxin_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="更新值第二话"
+            android:textSize="10sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="#22000000"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/jixulu_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="收取杏仁"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/jixulu_dangqian_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录制5化"
+        android:textSize="10sp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

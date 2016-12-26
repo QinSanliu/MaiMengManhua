@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#fff"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@drawable/zixun_subject_shape"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小编加快马力每周更新哦~！"
+            android:textSize="15sp"
+            android:textColor="#DD2248"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <com.example.administrator.maimengcartoon.widget.MyGridView
+        android:id="@+id/item_subject_grid_myGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:layout_marginTop="5dp">
+
+    </com.example.administrator.maimengcartoon.widget.MyGridView>
+
+</LinearLayout>

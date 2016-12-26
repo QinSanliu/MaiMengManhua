@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:context="com.example.administrator.maimengcartoon.fragment.mengwofragment.CartoonTabFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/bg_profile_item1"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/fragment_cartoon_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#DD2248"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条"
+            android:textColor="#DD2248"
+            android:textSize="12dp"
+            android:layout_alignBottom="@id/fragment_cartoon_number"
+            android:layout_toRightOf="@id/fragment_cartoon_number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我评论过的漫画"
+            android:textColor="#DD2248"
+            android:textSize="18sp"
+            android:layout_below="@id/fragment_cartoon_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/bg_profile_item1"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp">
+
+        <ImageView
+            android:id="@+id/fragment_cartoon_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/image_bookshelf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书架"
+            android:textColor="#DD2248"
+            android:textSize="18sp"
+            android:layout_below="@id/fragment_cartoon_book"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

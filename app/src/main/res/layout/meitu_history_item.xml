@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/meitu_labels"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="全部标签的布局"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:background="@drawable/meitu_bg_no_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

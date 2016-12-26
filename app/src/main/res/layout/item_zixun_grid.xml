@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/zixun_subject_grid_shape">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_zixun_grid_images"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/jiazaitu"
+        android:scaleType="fitXY"
+        fresco:roundedCornerRadius="3dp" />
+
+    <TextView
+        android:id="@+id/item_zixun_grid_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你好"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="3dp"/>
+
+</LinearLayout>

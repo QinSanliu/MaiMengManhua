@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/item_zi_xun_alltab_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你好"
+        android:textSize="18sp"
+        android:background="@drawable/zixun_alltab_shape"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

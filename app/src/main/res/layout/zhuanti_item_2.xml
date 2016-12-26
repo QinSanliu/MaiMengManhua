@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/zhuanti_item_2_simImage"
+                android:layout_width="match_parent"
+                fresco:roundedCornerRadius="5dp"
+                android:layout_height="120dp"
+                android:background="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:id="@+id/zhunti_item_2_imagName"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="哈哈哈哈"
+                android:textSize="15sp"
+                android:background="@mipmap/image_billboard_label"
+               android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/image_billbord_sanjiao"
+                    />
+                <TextView
+                    android:id="@+id/zhuanti_item_2_jieshao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="adasd4a654d65a4d65a4d64a6"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

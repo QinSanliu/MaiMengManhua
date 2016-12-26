@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/item_zi_xun_head_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/item_zi_xun_head_linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/ic_page_indicator"
+                android:layout_marginRight="10dp"/>
+
+            <!--<ImageView-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:src="@mipmap/ic_page_indicator"-->
+                <!--android:layout_marginRight="10dp"/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:src="@mipmap/ic_page_indicator"/>-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/item_zi_xun_head_bufan"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher"
+                fresco:roundedCornerRadius="3dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/item_zi_xun_head_classical"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentLeft="true"
+                fresco:roundedCornerRadius="3dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="更多精彩专题不要错过哦，快戳进来侵占吧！"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/item_zi_xun_head_moreSubject"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/image_enter"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#DBDBDB">
+    </LinearLayout>
+
+</LinearLayout>

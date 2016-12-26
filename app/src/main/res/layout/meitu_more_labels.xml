@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/meitu_ET_searchInput"
+        android:drawableLeft="@mipmap/sousuo"
+        android:hint="@string/inputlabels"
+        android:layout_marginBottom="5dp"
+        android:textColor="#808080"
+        android:background="@drawable/meitu_edittext_border"
+        android:layout_width="match_parent"
+        android:minHeight="40dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:background="#d0d0d0"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="历史"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <GridView
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+        </GridView>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/meitu_more_gridview"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </GridView>
+
+</LinearLayout>

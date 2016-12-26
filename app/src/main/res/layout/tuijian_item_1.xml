@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:id="@+id/tuijian_item_1_relativelayout_bt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:onClick=""
+    >
+    <ImageView
+        android:id="@+id/tuijian_item_1_shouiv"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/tuijian_item_1_jixulutx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="继续撸"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/tuijian_item_1_shouiv"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/tuijian_item_1_genxintx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上次看过的又有更新咯！"
+        android:textSize="10sp"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/tuijian_item_1_jixulutx"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/more"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+    <!--横向滑动的listview，外面的包裹是自定义scrollview解决滑动冲突-->
+    <com.example.administrator.maimengcartoon.manhuachongxieclass.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <com.example.administrator.maimengcartoon.manhuachongxieclass.HorizontalListView
+            android:id="@+id/tuijian_item_1_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </com.example.administrator.maimengcartoon.manhuachongxieclass.HorizontalListView>
+
+    </com.example.administrator.maimengcartoon.manhuachongxieclass.MyScrollView>
+
+</LinearLayout>

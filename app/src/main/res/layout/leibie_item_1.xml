@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_more_item_default"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:id="@+id/zhuanti_item_1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="最新上架"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/label_more"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            />
+        <TextView
+            android:id="@+id/zhuanti_item_1_jianjie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dfasfasfasdfasdfsa"
+            android:layout_toLeftOf="@id/iamge"
+            android:layout_alignBottom="@+id/zhuanti_item_1_name"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/zhuanti_item_1_simimage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        fresco:roundedCornerRadius="90dp"
+        android:scaleType="fitXY"
+        android:background="@mipmap/weigouxuan"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        />
+
+</RelativeLayout>

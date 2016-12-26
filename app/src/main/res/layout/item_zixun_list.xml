@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_zixun_list_thumbnail"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/jiazaitu"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        fresco:roundedCornerRadius="10dp"
+        />
+    <!---->
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="#000"
+        android:layout_alignBottom="@id/item_zixun_list_thumbnail"
+        android:alpha="0.3"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/item_zixun_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/item_zixun_list_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈哈"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_zixun_list_messageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="共20篇"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:alpha="0.4"
+        android:background="@drawable/zixun_subject_num_shape"
+        android:layout_alignRight="@id/item_zixun_list_thumbnail"
+        android:layout_alignTop="@id/item_zixun_list_thumbnail"
+        android:layout_marginTop="10dp"
+        android:gravity="right|center"/>
+
+</RelativeLayout>
